@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.greenbook.view.NestedScrollableHost android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sameDirectionWithParent="true">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.example.greenbook.view.NestedScrollableHost>
+    <com.example.greenbook.view.circleindicator.CircleIndicator3 android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" app:ci_animator="@anim/indicator_animator" app:ci_animator_reverse="@anim/indicator_animator_reverse" app:ci_drawable="@drawable/shape_oval_primary" app:ci_height="5.0dip" app:ci_width="5.0dip" />
+</LinearLayout>

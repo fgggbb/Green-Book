@@ -1,0 +1,220 @@
+.class public final Lw/r1;
+.super Lpb/i;
+.source "SourceFile"
+
+# interfaces
+.implements Lwb/e;
+
+
+# instance fields
+.field public e:I
+
+.field public final synthetic f:Lw/t1;
+
+.field public final synthetic g:F
+
+.field public final synthetic h:F
+
+
+# direct methods
+.method public constructor <init>(Lw/t1;FFLnb/e;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lw/r1;->f:Lw/t1;
+
+    .line 2
+    .line 3
+    iput p2, p0, Lw/r1;->g:F
+
+    .line 4
+    .line 5
+    iput p3, p0, Lw/r1;->h:F
+
+    .line 6
+    .line 7
+    const/4 p1, 0x2
+
+    .line 8
+    invoke-direct {p0, p1, p4}, Lpb/i;-><init>(ILnb/e;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lic/v;
+
+    .line 2
+    .line 3
+    check-cast p2, Lnb/e;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lw/r1;->create(Ljava/lang/Object;Lnb/e;)Lnb/e;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Lw/r1;
+
+    .line 10
+    .line 11
+    sget-object p2, Ljb/n;->a:Ljb/n;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Lw/r1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
+.end method
+
+.method public final create(Ljava/lang/Object;Lnb/e;)Lnb/e;
+    .locals 3
+
+    .line 1
+    new-instance p1, Lw/r1;
+
+    .line 2
+    .line 3
+    iget v0, p0, Lw/r1;->g:F
+
+    .line 4
+    .line 5
+    iget v1, p0, Lw/r1;->h:F
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Lw/r1;->f:Lw/t1;
+
+    .line 8
+    .line 9
+    invoke-direct {p1, v2, v0, v1, p2}, Lw/r1;-><init>(Lw/t1;FFLnb/e;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    sget-object v0, Lob/a;->d:Lob/a;
+
+    .line 2
+    .line 3
+    iget v1, p0, Lw/r1;->e:I
+
+    .line 4
+    .line 5
+    const/4 v2, 0x1
+
+    .line 6
+    if-eqz v1, :cond_1
+
+    .line 7
+    .line 8
+    if-ne v1, v2, :cond_0
+
+    .line 9
+    .line 10
+    invoke-static {p1}, Lkb/x;->N(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 15
+    .line 16
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    throw p1
+
+    .line 22
+    :cond_1
+    invoke-static {p1}, Lkb/x;->N(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    iget-object p1, p0, Lw/r1;->f:Lw/t1;
+
+    .line 26
+    .line 27
+    iget-object p1, p1, Lw/t1;->F:Lw/b2;
+
+    .line 28
+    .line 29
+    iget v1, p0, Lw/r1;->g:F
+
+    .line 30
+    .line 31
+    iget v3, p0, Lw/r1;->h:F
+
+    .line 32
+    .line 33
+    invoke-static {v1, v3}, Lb2/c;->f(FF)J
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-wide v3
+
+    .line 37
+    iput v2, p0, Lw/r1;->e:I
+
+    .line 38
+    .line 39
+    invoke-static {p1, v3, v4, p0}, Landroidx/compose/foundation/gestures/a;->a(Lw/b2;JLpb/c;)Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    if-ne p1, v0, :cond_2
+
+    .line 44
+    .line 45
+    return-object v0
+
+    .line 46
+    :cond_2
+    :goto_0
+    sget-object p1, Ljb/n;->a:Ljb/n;
+
+    .line 47
+    .line 48
+    return-object p1
+.end method

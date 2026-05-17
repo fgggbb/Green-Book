@@ -1,0 +1,14 @@
+# Build related
+*.apk
+*.jar
+build/
+
+# IDE
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="com.example.greenbook" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="com.example.greenbook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.greenbook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.example.greenbook.C001Application" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.C001apkCompose" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.example.greenbook.ui.feed.reply.ReplyActivity" android:theme="@style/AppThemeTranslucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.example.greenbook.ui.main.MainActivity" android:theme="@style/Theme.C001apkCompose" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="live" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="u" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="feed" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="collection" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="apk" android:pathPattern="/.*\\..*" android:scheme="coolmarket"/>
+                <data android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="com.coolapk.market" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="coolapk.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/apk/.*\\..*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/game/.*\\..*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/feed/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/web/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/faxian/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/t/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/u/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/n/.*" android:scheme="http"/>
+                <data android:host="coolapk.com" android:pathPattern="/album/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/apk/.*\\..*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/game/.*\\..*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/feed/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/web/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/faxian/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/t/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/u/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/n/.*" android:scheme="http"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/album/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/apk/.*\\..*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/game/.*\\..*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/feed/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/web/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/faxian/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/t/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/u/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/n/.*" android:scheme="https"/>
+                <data android:host="coolapk.com" android:pathPattern="/album/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/apk/.*\\..*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/game/.*\\..*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/feed/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/web/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/faxian/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/t/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/u/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/n/.*" android:scheme="https"/>
+                <data android:host="www.coolapk.com" android:pathPattern="/album/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/.*" android:scheme="coolmarket"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/apk/.*\\..*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/game/.*\\..*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/feed/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/web/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/faxian/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/t/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/u/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/n/.*" android:scheme="http"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/album/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/apk/.*\\..*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/game/.*\\..*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/feed/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/web/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/faxian/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/t/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/u/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/n/.*" android:scheme="http"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/album/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/apk/.*\\..*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/game/.*\\..*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/feed/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/web/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/faxian/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/t/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/u/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/n/.*" android:scheme="https"/>
+                <data android:host="coolapk1s.com" android:pathPattern="/album/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/apk/.*\\..*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/game/.*\\..*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/feed/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/web/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/faxian/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/t/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/u/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/n/.*" android:scheme="https"/>
+                <data android:host="www.coolapk1s.com" android:pathPattern="/album/.*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.example.greenbook.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="net.mikaelzero.mojito.ui.ImageMojitoActivity" android:theme="@style/Transparent"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <provider android:authorities="com.example.greenbook.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
