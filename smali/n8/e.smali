@@ -861,7 +861,7 @@
 
     .line 406
     .line 407
-    const-string v3, "<b><a href=\"https://github.com/fgggbb/Green-Book\">GitHub</a></b>"
+    const-string v3, "<b><a href=\"https://github.com/fgggbb/Green-Book\">GitHub</a></b><br/><br/>\u26a0\ufe0f \u672c\u61c9\u7528\u4ec5\u4f9b\u5b78\u7fd2\u7814\u7a76\uff0c\u8acb\u5728 24 \u5c0f\u6642\u5f8c\u522a\u9664\u672c\u61c9\u7528\u53ca\u6240\u6709\u5b89\u88dd\u5305"
 
     .line 408
     .line 409
