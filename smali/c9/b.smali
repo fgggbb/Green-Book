@@ -52,7 +52,7 @@
 
 .field public static t:Ljava/lang/String; = "16.2.1"
 
-.field public static u:Ljava/lang/String; = "26051601"
+.field public static u:Ljava/lang/String; = "2605071"
 
 .field public static v:Ljava/lang/String; = "13"
 

@@ -1317,7 +1317,7 @@
 
     .line 589
     .line 590
-    const-string v15, "Dalvik/2.1.0 (Linux; U; Android "
+    const-string v15, "Mozilla/5.0 (Linux; Android "
 
     .line 591
     .line 592
@@ -1337,7 +1337,7 @@
     move-result-object v3
 
     .line 600
-    const-string v15, ") (#Build; "
+    const-string v15, "; "
 
     .line 601
     .line 602
